@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
   const NftMint = await hre.ethers.getContractFactory("NftMint");
-  const nftMint = await NftMint.deploy("Hello, Hardhat!");
+  const nftMint = await NftMint.deploy("ShikoPunks", "SKP");
 
   await nftMint.deployed();
 
